@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Site-12-03_1653",
-    "currentPage": "index.html",
+    "currentPage": "page1.html",
     "theme": {
       "name": "mobirise-amp",
       "title": "Mobirise AMP",
@@ -43,7 +43,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 2,
+    "uniqCompNum": 7,
     "versionPublish": "4.12.3"
   },
   "pages": {
@@ -110,6 +110,83 @@
           "_once": false,
           "_params": {},
           "_anchor": "social-follow-1"
+        }
+      ]
+    },
+    "page1.html": {
+      "settings": {
+        "title": "Background-CV",
+        "order": 1
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "content18",
+          "_customHTML": "<section class=\"mbr-section content18\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background3.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#5c5747\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-col-lg-8\">\n                <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-white mbr-pb-2\" mbr-theme-style=\"display-1\">Background</h2>\n                <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light  mbr-fonts-style mbr-white mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-5\"></h3>\n                <div class=\"mbr-section-btn align-center mbr-pt-3\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n                    <a class=\"btn btn-primary\" href=\"https://mobirise.co\">LEARN MORE</a>\n                    <a class=\"btn btn-black-outline\" href=\"https://mobirise.co\">LIVE DEMO</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "si7RKKJXPg",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content18-2"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "img": {
+              "object-fit": "cover"
+            },
+            "@media (min-width: 768px)": {
+              ".image-block when (@flexDirection)": {
+                "padding-left": "2rem"
+              },
+              ".image-block when not (@flexDirection)": {
+                "padding-right": "2rem"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".image-block": {
+                "padding-bottom": "1rem"
+              }
+            }
+          },
+          "_name": "features10",
+          "_customHTML": "<section class=\"features10\" group=\"Features\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"2\" step=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Media on Left/Right\" name=\"flexDirection\">\n\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n       \n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\" mbr-class=\"{'mbr-row-reverse': flexDirection}\">\n            <div class=\"image-block mbr-col-sm-12 mbr-col-md-6 \">\n                <amp-img src=\"@PROJECT_PATH@/assets/images/photo-2-256x256.png\" layout=\"responsive\" width=\"521.9076305220883\" height=\"553\" alt=\"Mobirise\" class=\"mobirise-loader\">\n                    <div placeholder class=\"placeholder\"></div>\n                    <img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/photo-2-256x256.png\" alt=\"Mobirise\" title>\n                </amp-img>\n            </div>\n            <div class=\"text-block mbr-col-sm-12 mbr-col-md-6 mbr-m-auto\">\n                <h3 class=\"mbr-section-title mbr-fonts-style align-left mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    Oguzhan Begik</h3>\n                <p class=\"mbr-fonts-style mbr-text align-left mbr-pt-1 mbr-pb-3\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Born in Izmir- Turkey on November 12th 1992<br><br>Interests : Photography, History, Mythology<br><br><br><br><br></p>\n                <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-sm btn-primary\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">Curriculum vitae (CV)<br></a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "si7RLLrV1D",
+          "_anchor": "features10-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"content2 mbr-section article\" plugins=\"amp-main\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-10 mbr-col-lg-8\">\n                <h3 class=\"mbr-fonts-style mbr-section-title mbr-light mbr-py-1\" mbr-if=\"showTitle\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">Curriculum vitae (CV)<br></h3>\n                <p class=\"mbr-text mbr-fonts-style mbr-py-1\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article><b>Current Research&nbsp;</b><br><br>PhD Candidate at Centre for Genomic Regulation (Barcelona- Spain) and Garvan Institute of Medical Research (Sydney- Australia)<br>Supervisors : Dr. Eva Novoa Pardo &amp; Prof.Dr. John S Mattick<br>Research Focus : Exploring RNA dynamics using nanopore sequencing technologies<br><br><b>Education<br></b><br><i>0</i><i>8/2017- Ongoing\n</i><br>PhD in Medicine at University of New South Wales (UNSW) / Sydney-AUSTRALIA\nThesis Project: “Cracking the code: Novel tools to map RNA modifications and structure using second and third-generation sequencing\nTechnologies”\n<br><br><i>June 2017\n<br></i>MSc in Molecular Biology and Genetics at Middle East Technical University (METU) / Ankara-TURKEY\nThesis Project: “Alternative Polyadenylation in a Differentiation Model”\nCumulative GPA : 3.93/4.00 High Honor Student\n<br><br><i>June 2015<br></i>\nBSc in Molecular Biology and Genetics at Middle East Technical University (METU) /Ankara-TURKEY\nCumulative GPA : 3.28/4.00 Honor Student<br><br><b>Work Experience<br></b><br><i>01/2016 - 08/2017 <br></i>Research Assistant in Biological Sciences Department at METU<br><br><b>Publications\n<br></b>• <b>Begik O</b> . * Lucas MC.*, Ramirez JM., Milenkovic I., Cruciani S., Vieira HGS., Medina R., Liu H., Sas-Chen A., Mattick JS., Schwartz S., Novoa EM. “Decoding ribosomal RNA modification dynamics at single molecule resolution” Under Review. BioRxiv 2020\n<br>• Smith MA., Ersavas T., Ferguson JM., Liu H, Lucas MC., <b>Begik O</b> . , Bojarski L., Barton K., Novoa EM. “Barcoding and demultiplexing Oxford Nanopore native RNA sequencing reads with deep residual learning” Genome Research , 2020<br>\n• &nbsp;<b>Begik O</b> . , Lucas MC, Liu H., Ramirez JM., Mattick JS., Novoa EM. “ Integrative analyses of the RNA modification machinery reveal tissue- and cancer-specific signatures” Genome Biology 21, 97 (2020).<br>\n• Liu H.*, <b>Begik &nbsp;O</b> . * , Lucas MC, Ramirez JM., Mason C., Wiener D., Schwartz S., Mattick JS, Smith M., Novoa EM. “Accurate detection of m6A RNA modifications in native RNA sequences” Nature Communications, September 2019\n<br>• <b>Begik O</b> . , Oyken M., Cinkilli Alican T., Can T., Erson Bensan A.E. “Alternative Polyadenylation patterns for\nnovel gene discovery and classification in cancer” Neoplasia, June 2017\n• Erson Bensan A.E.,B e ğ i k O . , “m6A Modification and Implications for microRNAs” MicroRNA, June 2017<br>\n• Bag, E., <b>Begik , O</b> . , Yusan P., Erel-Goktepe, I. “Hydrogen-bonded Multilayers with Contrallable pH-induced\nDisintegration Kinetics for Controlled Release Applications from Surfaces”, Journal of Macromolecular Science, Part A: Pure and Applied Chemistry, 2015, 52, 286.<br><br>* Authors contributed equally to this work<br><br><br><b>Poster presentations\n<br></b>• <b>Begik O</b> . * , Liu H.*, Lucas MC, Ramirez JM., Mason C., Wiener D., Schwartz S., Mattick JS, Smith M., Novoa EM. “Accurate detection of m6A RNA modifications in native RNA sequences” RNA Editing Gordon Research Conference, Lucca, Italy, March 2019 (Poster Prize Winner)\n<br>• <b>Begik O .</b> ,Vieira H., Mattick J.S., Novoa Maria E. “Deciphering m3C Modifications on mRNA”, XII. PhD Symposium of Centre for Genomic Regulation, Barcelona, Spain, November 2018\n<br>• <b>Begik O </b>. , Mattick J.S., Novoa Maria E. “ Deciphering m3C Modifications on mRNA”, EMBL Post-Graduate Symposium, Garvan Institute of Medical Research, Sydney, Australia, November 2017<br>\n•<b> Begik O .</b> , Oyken M., Cinkilli Alican T., Can T., Erson Bensan A.E. “Alternative Polyadenylation patterns for novel gene discovery and classification in cancer”, HIBIT, Cyprus, June 2017\n<br>• <b>Begik O .</b> , Oyken M., Cinkilli Alican T., Can T., Erson Bensan A.E. “Alternative Polyadenylation patterns for novel gene discovery and classification in cancer” , RNA Meeting, Prague, June 2017\n<br>• <b>Begik O .</b> , Cinkilli T., Oyken M., Can T., Erson Bensan A.E. “Identification of a potential cancer related lncRNA”, EMBO Conference: From Functional Genomics to Systems Biology, Heidelberg, November 2016\n<br>• <b>Begik O . </b>, Banerjee S., Can T., Erson Bensan A.E. (2016). 3’UTR length isoform generation profile in a differentiation model. FEBS J, 283: P-01.02.2-011. doi:10.1111/febs.13806, FEBS 2016 41st Congress, Kusadasi,Turkey, September 2016\n<br>• <b>Begik O </b>. , Akman Tuncer H.B., Tunçer S., Can T., Banerjee S., Erson Bensan A.E. “Alternative Polyadenylation\nin a Differentiation Model: Caco-2 Cells” , IV. International Congress of the Molecular Biology Association of Turkey, Ankara, November 2015<br><br>* Authors contributed equally to this work<br><br><br><b>Research Experience\n</b><br><br>08/2017- Ongoing<br>Cracking the code: Novel tools to map RNA modifications and structure using second and third-generation sequencing technologies &nbsp;<br>PhD Candidate\n<br>RNA and Plasticity Lab– Garvan Institute of Medical Research Sydney/Australia (08/2017-08/2018) <br>Epitranscriptomics and RNA Dynamics Lab- Centre for Genomic Regulation Barcelona/Spain (08/2018- Current) <br>Supervisor : Dr. Eva Maria Novoa Pardo and Prof. Dr. John S. Mattick\n<br><br>09/2016- 04/2017<br>• Alternative Polyadenylation patterns for novel gene discovery and classification in cancer (Side Project-Please see the publications section) <br>MSc Project Researcher\n                    <br>Cancer Genetics Lab - METU\nSupervisor : Prof. Dr. A. Elif Erson Bensan and Prof. Dr. Tolga Can&nbsp;<br><br>01/2015- 07/2017<br>Alternative Polyadenylation in a differentiation model (MSc Thesis) &nbsp;<br>MSc Project Researcher\nCancer Genetics Lab - METU\n<br>Supervisor : Prof. Dr. A. Elif Erson Bensan and Dr. Sreeparna Banerjee<br><br>09/2014- 01/2015<br>Effects of AKR1B10 gene on proliferation of colorectal cancer cells <br>Undergraduate Project Researcher\nCancer Genetics Lab - METU <br>Supervisor : Dr. Sreeparna Banerjee<br><br>&nbsp;06/2014-09/2014<br>Epigenetic Mechanisms and Reactivation of Latent HIV Reservoirs <br>Summer Research Intern\n<br>Genomic Architecture Lab – Center for Genomic Regulation<br> Supervisor : Dr. Guillaume Filion &amp; Dr. Heng-Chang Chen<br>&nbsp;<br>08/2012-06/2013<br>Hydrogen-bonded Multilayers with Contrallable pH-induced Disintegration Kinetics for Controlled Release Applications from\nSurfaces (Please see the publications section)<br> Project Researcher\nNanotechnology Lab - METU\n<br>Supervisor : Prof. Dr. Irem Erel<br><br><br><br><b>Meetings and Courses</b><br><b><br></b>RNA Editing Gordon Research Conference (March 24-29 2019, Lucca Italy) <br>EMBL Course: Advanced Training with Oxford Nanopore Technologies (January 2019, Heidelberg) <br>XII. PhD Symposium of Centre for Genomic Regulation (November 2018, Barcelona) <br>EMBL Post-Graduate Symposium, Garvan Institute of Medical Research (November 2017, Sydney) <br>Australian National Computational Infrastructure (NCI) Autumn Training Session (April 2018, Canberra) <br>AMSI Bioinfosummer Course 2017 (December 2017, Melbourne) <br>22nd Annual Meeting of the RNA Society (June 2017- Prague) <br>EMBO Conference : From Functional Genomics to Systems Biology (November 2016, Heidelberg) <br>EMBO Course : Regulatory small and long ncRNAs: Durat et lucet (11-17 June 2016, Trento) <br>Molecular Biology Association of Turkey Congress (November 2015, Ankara)\n08/2012-06/2013<br><br><br><br><br><br><br><br><br><br><br><br><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "si7UvokKWx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content2-6"
         }
       ]
     }
